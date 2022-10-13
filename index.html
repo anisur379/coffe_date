@@ -1,0 +1,353 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffer-Date</title>
+    <script src="https://kit.fontawesome.com/b7476b1f17.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: rgb(136, 145, 153);
+        }
+
+        .top-section {
+            height: 600px;
+            width: 1300px;
+            margin-left: 100px;
+            background-repeat: no-repeat;
+            background-color: rgb(255, 198, 47);
+            background-image: url(background.jpg);
+            background-size: cover;
+        }
+
+        .logo {
+            height: 80px;
+            width: 200px;
+            border: 5px solid darkgreen;
+            border-radius: 30px;
+            background-color: cadetblue;
+        }
+
+        .logo:hover {
+            background-color: cyan;
+        }
+
+        .read {
+            margin-left: 400px;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .read p {
+            color: white;
+            font-size: 30px;
+            width: 60%;
+            padding-top: 100px;
+
+        }
+
+        .read a {
+            align-items: center;
+            justify-content: center;
+            margin: 0%;
+            margin-right: 400px;
+            background-color: rgb(255, 198, 47);
+            text-decoration: rgb(255, 198, 47);
+            font-size: 20px;
+            border: 10px solid rgb(255, 198, 47);
+            border-radius: 8px;
+        }
+
+        .read a:hover {
+            background-color: cyan;
+            border: 10px solid cyan;
+            border-radius: 8px;
+            color: black;
+        }
+
+        .happy {
+            display: flex;
+
+        }
+
+        .happy-image {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 150px;
+            box-shadow: -0.5px 6px 10px white;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(80, 73, 73);
+            border-radius: 15px;
+            margin-top: 100px;
+        }
+
+        .happy-image img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .happy-image p {
+            color: aliceblue;
+        }
+
+        .happy-image a {
+            background-color: rgb(255, 198, 47);
+            ;
+            text-decoration: none;
+            font-size: 20px;
+            border: 10px solid rgb(255, 198, 47);
+            ;
+            border-radius: 8px;
+        }
+
+        .happy-image:hover {
+            background-color: cadetblue;
+
+        }
+
+        .ul-top {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-top: 20px;
+        }
+
+        .ul-top li {
+            list-style: none;
+        }
+
+        .ul-top a {
+            margin-right: 60px;
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            border: 8px solid cadetblue;
+            border-radius: 5px;
+            background-color: cadetblue;
+            margin-top: 0%;
+        }
+
+        .ul-top a:hover {
+            background-color: cyan;
+            color: black;
+            border: 8px solid cyan;
+            border-radius: 5px;
+
+        }
+
+        .footer-section {
+            background-color: rgb(111, 104, 103);
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .email-site {
+            width: 35%;
+            margin-top: 60px;
+            justify-content: center;
+            margin-left: 140px;
+        }
+
+        .email-site h1 {
+            color: white;
+        }
+
+        .email-site p {
+            font-size: 15px;
+            color: white;
+            opacity: 35%;
+        }
+
+        .email-site p:hover {
+            color: white;
+            opacity: 100%;
+        }
+
+        .chicago {
+            width: 40%;
+            justify-content: center;
+            margin-left: 50px;
+            padding-top: 20px;
+        }
+
+        .chicago p {
+            font-size: 15px;
+            color: white;
+            opacity: 35%;
+        }
+
+        .chicago p:hover {
+            color: white;
+            opacity: 100%;
+        }
+
+        .chicago a {
+            text-decoration: none;
+            color: red;
+        }
+
+        .chicago h1 {
+            color: white;
+        }
+
+        .corporation {
+            width: 30%;
+            margin-left: 20px;
+            margin-top: 130px;
+            text-align: center;
+        }
+
+        .corporation h3 {
+            color: white;
+        }
+
+        .corporation p {
+            color: red;
+        }
+
+        .corporation p:hover {
+            color: white;
+            opacity: 100%;
+        }
+
+        .corporation img {
+            height: 150px;
+            width: 150px;
+        }
+
+        .corporation .navigation {
+            width: 40%;
+            justify-content: center;
+        }
+
+        .navigation {
+            margin-right: 70px;
+            margin-top: 45px;
+        }
+
+        .navigation h1 {
+            color: white;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: red;
+            font-size: 17px;
+        }
+
+        button {
+            color: rgb(143, 143, 187);
+            background-color: red;
+        }
+
+        .icons {
+            margin-top: 20px;
+        }
+
+        .icons i {
+            margin-left: 10px;
+
+
+        }
+
+        .facebook i {
+            color: rgb(92, 92, 203);
+        }
+
+        .twiter i {
+            color: rgb(116, 116, 216);
+        }
+
+        .google i {
+            color: rgb(66, 133, 244);
+        }
+
+        .linked-in i {
+            color: rgb(10, 102, 194);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="top-section">
+        <nav class="nav-top">
+            <img class="logo" src="logo.png" alt="">
+            <ul class="ul-top">
+                <li><a href="https://www.facebook.com/anisur4201">About us</a></li>
+                <li><a href="https://www.facebook.com/anisur4201">Contact us</a></li>
+                <li><a href="https://www.facebook.com/anisur4201">Article</a></li>
+                <li><a href="https://www.facebook.com/anisur4201">Visit</a></li>
+                <li><a href="https://youtu.be/fKAMfcVtUJo">YouTube</a></li>
+            </ul>
+        </nav>
+        <div class="read">
+            <p>Coffee is a plant and the name of the drink that is made from this plant.</p>
+            <a href="">Read More</a>
+        </div>
+    </section>
+    <section>
+        <div class="happy">
+            <div class="happy-image">
+                <img src="happy.png" alt="">
+                <p>If you want success,You should work hard</p>
+                <a href="https://www.instagram.com/anisur379/">Read More</a>
+            </div>
+            <div class="happy-image">
+                <img src="happy1.png" alt="">
+                <p>If you want success,You should work hard</p>
+                <a href="https://www.instagram.com/anisur379/">Read More</a>
+            </div>
+            <div class="happy-image">
+                <img src="happy2.jpg" alt="">
+                <p>If you want success,You should work hard</p>
+                <a href="https://www.instagram.com/anisur379/">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section">
+        <div class="footer-top">
+            <div class="email-site">
+                <h1>STAY CONNECTED</h1>
+                <P>Join over 10,500 people who receive bi-weekly web marketing tips.</P>
+                <input type="email" name="" placeholder="_Email Address" id="" required>
+                <input type="button" value="Sign-Up" required>
+                <div class="icons">
+                    <span class="facebook"><i class="fa-brands fa-facebook fa-2x"></i></span>
+                    <span class="twiter"><i class="fa-brands fa-twitter fa-2x"></i></span>
+                    <span class="google"><i class="fa-brands fa-google-plus-g fa-2x"></i></span>
+                    <span class="linked-in"><i class="fa-brands fa-linkedin-in fa-2x"></i></span>
+                </div>
+            </div>
+            <div class="chicago">
+                <h1>COMMITTED TO CHICAGO</h1>
+                <p> Orbit is a proud memeber of the Chicago Community. We strive to educate and collaborate with
+                    like-minded businesses to make a difference environmentally and sociality.Let's collaborate</p>
+                <a href="https://www.instagram.com/anisur379/">More about Our BCorp Status</a>
+            </div>
+            <div class="corporation">
+                <h3>Ceritfied</h3>
+                <img src="border.png" alt="">
+                <p>Corporation</p>
+            </div>
+            <div class="navigation">
+                <h1>NAVIGATE</h1>
+                <a href="https://www.instagram.com/anisur379/">Portfolio ,</a><br>
+                <a href="https://www.instagram.com/anisur379/">Web Design & Development ,</a><br>
+                <a href="https://www.instagram.com/anisur379/">About Us ,</a><br>
+                <a href="https://www.instagram.com/anisur379/"> Our Team ,</a><br>
+                <a href="https://www.instagram.com/anisur379/"> Blog ,</a><br>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
